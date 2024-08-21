@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .header {
+            border: 1px solid #ffffff;
+            }
+        
+        .recommended {
+            display: flex;
+            gap: 16.5px;
+            background-color: aliceblue;
+            }
+        .section{
+            border:5px solid #ffffff
+        }
+        
+        h3 {
+            color: rgb(66, 66, 241);
+            text-align: center;
+            }
+        
+        h2 {
+            text-align: center;
+            margin: 5px ;
+        }
+        
+        .athens{
+            height: 100vh;
+            padding: 64px;
+            z-index: -1; 
+            position: sticky;
+            bottom: 0;
+            box-sizing: border-box;
+            background-position: center;
+            background-image: url(https://raw.githubusercontent.com/KarinaR-Ch/shecodes/main/1.jpg);
+            background-repeat: no-repeat;
+                    
+        }
+        button{
+            position: relative;
+            background-color: rgba(66, 66, 241, 0.616);
+            border-radius: 50px;
+            padding: 14px 15px
+        }
+        .welcome {
+            position: absolute;
+            top: 0;
+            right: 0;
+            box-sizing: border-box;
+            background-color: no;
+            border-radius: 50px;
+            border-color: black;
+            margin-top: 70px;
+            margin-right: 15px;
+            transform: translateX();
+        }
+        .athens:target{
+            transform: translateX();
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+      <div class="header__bottom">
+          <h3> THE MOST EXITING PLACE IN THE WORLD</h3>
+          
+      </div> 
+    </header>
+    <main>
+        <div class="recommended">
+        <section>
+            <h2>Historical Culture</h2>
+            <img src="https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/847fa3b9-9c4d-4ff6-bb71-38e1f5e8f0be/-/format/jpeg/-/resize/1300x/" width = " 400", height="250">
+        </section>
+        <section>
+            <h2>Innovations</h2>
+            <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/main/niarchos.jpg" width = " 400", height="250">
+        </section>
+        <section >
+            <h2>Interesting Traditions</h2>
+            <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/main/tradition.webp" width = " 400", height="250">
+        </section>
+        </div>
+        <div class="recommended">
+        <section>
+            <h2>Beautiful Nature</h2>
+            <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/main/nature.jpg" width = " 400", height="250">
+        </section>
+        <section>
+            <h2>Unique Language</h2>
+            <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/main/language.webp" width = " 400", height="250">
+            
+        </section>
+        <section>
+            <h2>Amazing People</h2>
+            <img src ="https://www.greece-is.com/wp-content/uploads/2017/08/Folk_Dance_050117_KAMPITI_24.jpg" width = " 400", height="250">
+        </section>
+        </div>
+    
+     
+    </main>
+    <footer class="athens" id="athens">
+        <button>
+            <h2>Welcome to <br> ATHENS </h2>
+            <a href="#welcome"></a>
+        </button>
+        <div class="welcome">
+        <h2>Athens - historic city and capital of Greece.  Many of Classical civilization’s and <br>  
+            artistic ideas originated here. The city is a world centre of archaeological research.  <br> 
+             You can find many historic and  interactive museums and theatres. Lot's of traditions <br> 
+              saves for hundrends years. There are many greek and international libraries where <br> 
+              you can find intresting books and bessellers for children and adult in different languages.</h2>
+        </div>
+    </footer>
+</body>
+</html>
