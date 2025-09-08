@@ -1,126 +1,1365 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="1.css">
+    <title>Discover Greece - The Birthplace of Civilization</title>
+
+    <!-- Favicon Options - Choose one of the following: -->
+
+    <!-- Option 1: Greek Temple Icon -->
+    <link rel="shortcut icon"
+        href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2IDJMMjAgN0wxMiA3TDE2IDJaIiBmaWxsPSIjM0I4MkY2Ii8+CjxwYXRoIGQ9Ik00IDI4TDI4IDI4TDI4IDI0TDQgMjRMNCAyOFoiIGZpbGw9IiMxRTQwQUYiLz4KPHJlY3QgeD0iOCIgeT0iMTEiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMyIgZmlsbD0iI0ZCQkYyNCIvPgo8bGluZSB4MT0iOCIgeTE9IjE4IiB4Mj0iMjQiIHkyPSIxOCIgc3Ryb2tlPSIjMUU0MEFGIiBzdHJva2Utd2lkdGg9IjIiLz4KPGxpbmUgeDE9IjgiIHkxPSIyMSIgeDI9IjI0IiB5Mj0iMjEiIHN0cm9rZT0iIzFCODQwQSIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPgo="
+        type="image/svg+xml">
+
+    <!-- Option 2: Greek Column Icon -->
+    <!-- <link rel="shortcut icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMTIiIHk9IjQiIHdpZHRoPSI4IiBoZWlnaHQ9IjI0IiBmaWxsPSIjM0I4MkY2Ii8+CjxyZWN0IHg9IjEwIiB5PSIyIiB3aWR0aD0iMTIiIGhlaWdodD0iMiIgZmlsbD0iIzFFNDBBRiIvPgo8cmVjdCB4PSI4IiB5PSIyOCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjIiIGZpbGw9IiMxRTQwQUYiLz4KPC9zdmc+Cg==" type="image/svg+xml"> -->
+
+    <!-- Option 3: Olive Wreath Icon -->
+    <!-- <link rel="shortcut icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTIiIHN0cm9rZT0iI0ZCQkYyNCIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxwYXRoIGQ9Ik0xMCAxMkMxMiAxMCAxNiAxMCAxOCAxMk0xNCA4QzE2IDYgMjAgNiAyMiA4TTI0IDEyQzIyIDEwIDE4IDEwIDE2IDEyTTE4IDE2QzIwIDE4IDI0IDE4IDI2IDE2TTE0IDE2QzEyIDE4IDggMTggNiAxNiIgc3Ryb2tlPSIjM0I4MkY2IiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg==" type="image/svg+xml"> -->
+
+    <!-- Option 4: Greek Wave Icon -->
+    <!-- <link rel="shortcut icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMTBDMzMgMTAgMjIgMTAgMzIgMTBMMzIgMTVDMjIgMTUgMzMgMTUgMCAxNUwwIDEwWiIgZmlsbD0iIzNCODJGNiIvPgo8cGF0aCBkPSJNMCAxOEMzMyAxOCAyMiAxOCAzMiAxOEwzMiAyM0MyMiAyMyAzMyAyMyAwIDIzTDAgMThaIiBmaWxsPSIjM0I4MkY2Ii8+CjxwYXRoIGQ9Ik0wIDI2QzMzIDI2IDIyIDI2IDMyIDI2TDMyIDMxQzIyIDMxIDMzIDMxIDAgMzFMMCAyNloiIGZpbGw9IiMzQjgyRjYiLz4KPC9zdmc+Cg==" type="image/svg+xml"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body {
+        /* Global Styles */
+        * {
             margin: 0;
-        }
-        
-        .header {
-            border: 1px solid #ffffff;
-            }
-        
-        .recommended {
-            display: flex;
-            gap: 16.5px;
-            background-color: aliceblue;
-            }
-        .section{
-            border:5px solid #ffffff
-        }
-        
-        h3 {
-            color: rgb(66, 66, 241);
-            text-align: center;
-            }
-        
-        h2 {
-            text-align: center;
-            margin: 5px ;
-        }
-        
-        .athens{
-            height: 100vh;
-            padding: 64px;
-            z-index: -1; 
-            position: sticky;
-            bottom: 0;
+            padding: 0;
             box-sizing: border-box;
-            background-position: center;
-            background-image: url(https://raw.githubusercontent.com/KarinaR-Ch/shecodes/main/1.jpg);
-            background-repeat: no-repeat;
-                    
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        button{
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            border-radius: 10px;
+            border: 2px solid #f1f5f9;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #1e3ca3, #2563eb);
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1e40af;
+            font-size: 2.5rem;
             position: relative;
-            background-color: rgba(66, 66, 241, 0.616);
-            border-radius: 50px;
-            padding: 14px 15px
+            padding-bottom: 15px;
         }
-        .welcome {
+
+        .section-title:after {
+            content: '';
             position: absolute;
-            top: 0;
-            right: 0;
-            box-sizing: border-box;
-            background-color: no;
-            border-radius: 50px;
-            border-color: black;
-            margin-top: 70px;
-            margin-right: 15px;
-            transform: translateX();
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #1e40af, #3b82f6);
+            border-radius: 2px;
         }
-        .athens:target{
-            transform: translateX();
+
+        .section-subtitle {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #3b82f6;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+        /* Header Styles */
+        header {
+            background: url('https://raw.githubusercontent.com/KarinaR-Ch/shecodes/refs/heads/main/1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px 0;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            z-index: 1000;
+            padding: 15px 5%;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            padding: 10px 5%;
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            margin-right: 10px;
+            color: #fbbf24;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #fbbf24;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: #fbbf24;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+            animation: fadeInUp 1.2s ease;
+        }
+
+        .hero .btn {
+            animation: fadeInUp 1.4s ease;
+        }
+
+        /* Photo Gallery */
+        .photo-gallery {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card-container {
+            perspective: 1000px;
+            height: 250px;
+        }
+
+        .card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-front,
+        .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card-back {
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotateY(180deg);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-back h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            line-height: 1.4;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 250px;
+            transition: transform 0.3s ease;
+        }
+
+        .card-container:hover .card:not(.flipped) {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card-container:hover .card:not(.flipped) .gallery-item img {
+            transform: scale(1.1);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            padding: 20px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .card-container:hover .card:not(.flipped) .gallery-caption {
+            transform: translateY(0);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background-color: #f1f5f9;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        .feature-card.animated {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-img {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .feature-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .feature-card:hover .feature-img img {
+            transform: scale(1.1);
+        }
+
+        .feature-content {
+            padding: 20px;
+        }
+
+        .feature-content h3 {
+            color: #1e40af;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        /* Athens Spotlight */
+        .athens-spotlight {
+            padding: 80px 0;
+            background: url('https://raw.githubusercontent.com/KarinaR-Ch/shecodes/refs/heads/main/cards.png');
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
+
+        .athens-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 20px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .athens-content.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .athens-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #fbbf24;
+        }
+
+        .athens-content p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        /* Image Showcase */
+        .image-showcase {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .showcase-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .showcase-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 400px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .showcase-item.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .showcase-item.large {
+            grid-column: span 2;
+            height: 500px;
+        }
+
+        .showcase-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .showcase-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            padding: 30px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .showcase-caption h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #fbbf24;
+        }
+
+        .showcase-caption p {
+            font-size: 1rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transition-delay: 0.1s;
+        }
+
+        .showcase-item:hover .showcase-caption {
+            transform: translateY(0);
+        }
+
+        .showcase-item:hover .showcase-caption p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .showcase-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Newsletter */
+        .newsletter {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            color: white;
+            text-align: center;
+        }
+
+        .newsletter h2 {
+            margin-bottom: 20px;
+        }
+
+        .newsletter p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 50px 0 0 50px;
+            outline: none;
+        }
+
+        .newsletter-form button {
+            background: #fbbf24;
+            color: #1e40af;
+            border: none;
+            padding: 0 25px;
+            border-radius: 0 50px 50px 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background: #f59e0b;
+        }
+
+        /* Footer */
+        footer {
+            background: #0f172a;
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h3 {
+            color: #fbbf24;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            position: relative;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #fbbf24;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #3b82f6;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #cbd5e1;
+            font-size: 0.9rem;
+        }
+
+        /* Scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 999;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .scroll-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+        }
+
+        /* Modal Styles */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .modal.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            position: relative;
+            transform: translateY(-50px);
+            transition: transform 0.3s ease;
+        }
+
+        .modal.show .modal-content {
+            transform: translateY(0);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .modal-icon {
+            font-size: 3rem;
+            color: #3b82f6;
+            margin-bottom: 15px;
+        }
+
+        .modal h3 {
+            color: #1e40af;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .modal p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .modal-btn {
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .modal-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .nav-links {
+                margin-top: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-links li {
+                margin: 5px 10px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .showcase-container {
+                grid-template-columns: 1fr;
+            }
+
+            .showcase-item.large {
+                grid-column: span 1;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .newsletter-form input {
+                border-radius: 50px;
+                margin-bottom: 10px;
+            }
+
+            .newsletter-form button {
+                border-radius: 50px;
+                padding: 15px;
+            }
+
+            .scroll-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+
+            /* Адаптивність для тексту на картках */
+            .card-back h3 {
+                font-size: 1.1rem;
+                line-height: 1.3;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card-back h3 {
+                font-size: 1rem;
+                line-height: 1.2;
+            }
         }
     </style>
 </head>
+
 <body>
-    <header class="header">
-      <div class="header__bottom">
-          <h3> THE MOST EXITING PLACE IN THE WORLD</h3>
-          
-      </div> 
+    <!-- Header -->
+    <header id="home">
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                <i class="fas fa-landmark"></i>
+                Discover Greece
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#greece-section">Greece</a></li>
+                <li><a href="#why-greece-section">Why Greece</a></li>
+                <li><a href="#destinations-section">Destinations</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <h1>Discover the Magic of Greece</h1>
+            <p>Explore ancient history, stunning landscapes, and vibrant culture in the birthplace of Western
+                civilization</p>
+            <a href="#greece-section" class="btn">Explore Destinations</a>
+        </div>
     </header>
-    <main>
-        <div class="recommended">
-        <section>
-            <h2>Historical Culture</h2>
-            <img src="https://hhotels.gr/wp-content/uploads/2024/05/shutterstock_2383537395-1-1350x900.jpg" width = " 400", height="250">
-        </section>
-        <section>
-            <h2>Innovations</h2>
-            <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/main/niarchos.jpg" width = " 400", height="250">
-        </section>
-        <section >
-            <h2>Interesting Traditions</h2>
-            <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/main/tradition.webp" width = " 400", height="250">
-        </section>
+
+    <!-- Photo Gallery -->
+    <section id="greece-section" class="photo-gallery">
+        <div class="container">
+            <h2 class="section-title">Greece</h2>
+            <div class="gallery-grid">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-front">
+                            <div class="gallery-item">
+                                <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/refs/heads/main/shutterstock_2383537395-1-1350x900.webp"
+                                    alt="Historical Culture">
+                                <div class="gallery-caption">
+                                    <h3>Historical Culture</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Greece is the cradle of Western civilization, where democracy was born. Ancient temples
+                                and archaeological sites tell stories of gods and heroes.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-front">
+                            <div class="gallery-item">
+                                <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/main/niarchos.jpg"
+                                    alt="Innovations">
+                                <div class="gallery-caption">
+                                    <h3>Modern Innovations</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Contemporary Greece harmoniously blends ancient heritage with modern progress. The
+                                Stavros Niarchos Foundation represents architectural innovation.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-front">
+                            <div class="gallery-item">
+                                <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/main/tradition.webp"
+                                    alt="Traditions">
+                                <div class="gallery-caption">
+                                    <h3>Interesting Traditions</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Greek traditions span thousands of years. Easter celebrations feature unique customs
+                                like the Holy Friday processions.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-front">
+                            <div class="gallery-item">
+                                <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/main/nature.jpg"
+                                    alt="Beautiful Nature">
+                                <div class="gallery-caption">
+                                    <h3>Beautiful Nature</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Greece's diverse landscapes range from pristine beaches to majestic mountains.
+                                Crystal-clear waters surround over 6,000 islands.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-front">
+                            <div class="gallery-item">
+                                <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/main/language.webp"
+                                    alt="Unique Language">
+                                <div class="gallery-caption">
+                                    <h3>Unique Language</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Greek is one of the world's oldest recorded living languages. The Greek alphabet
+                                developed around 800 BC.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-front">
+                            <div class="gallery-item">
+                                <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/refs/heads/main/Folk_Dance_050117_KAMPITI_24.jpg"
+                                    alt="Amazing People">
+                                <div class="gallery-caption">
+                                    <h3>Amazing People</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Greeks are known for their warm hospitality and strong family values. The concept of
+                                "philoxenia" means love for strangers.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="recommended">
-        <section>
-            <h2>Beautiful Nature</h2>
-            <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/main/nature.jpg" width = " 400", height="250">
-        </section>
-        <section>
-            <h2>Unique Language</h2>
-            <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/main/language.webp" width = " 400", height="250">
-            
-        </section>
-        <section>
-            <h2>Amazing People</h2>
-            <img src ="https://www.greece-is.com/wp-content/uploads/2017/08/Folk_Dance_050117_KAMPITI_24.jpg" width = " 400", height="250">
-        </section>
+    </section>
+
+    <!-- Features Section -->
+    <section id="why-greece-section" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Greece?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/refs/heads/main/athens-acropolis-ancient-temple-2048x1365.webp"
+                            alt="Acropolis of Athens">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Ancient Monuments</h3>
+                        <p>Walk in the footsteps of philosophers at UNESCO World Heritage sites like the Acropolis,
+                            Delphi, and Olympia where Western civilization began.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/refs/heads/main/photo-1570077188670-e3a8d69ac5ff.webp"
+                            alt="Greek Islands">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Island Paradise</h3>
+                        <p>Discover over 6,000 islands with crystal-clear turquoise waters, whitewashed villages, and
+                            unforgettable Mediterranean sunsets.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/refs/heads/main/Greekfood-the-basis-of-MediterraneanDiet-AmbrosiaMagazine-1.jpg"
+                            alt="Greek Cuisine">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Mediterranean Cuisine</h3>
+                        <p>Indulge in healthy, flavorful dishes with fresh ingredients, olive oil, feta cheese, and
+                            traditional recipes passed through generations.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/refs/heads/main/greece-crete-matala-rocks.jpg"
+                            alt="Greek Beach">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Pristine Beaches</h3>
+                        <p>Relax on some of Europe's most beautiful beaches with golden sand, dramatic cliffs, and
+                            crystal-clear waters perfect for swimming.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/refs/heads/main/photo-1580502304784-8985b7eb7260.webp"
+                            alt="Greek Hospitality">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Authentic Hospitality</h3>
+                        <p>Experience the famous Greek "philoxenia" (friendliness to strangers) that makes every visitor
+                            feel welcome and valued.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/refs/heads/main/greece-dancers%20(1).webp"
+                            alt="Greek Culture">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Vibrant Culture</h3>
+                        <p>From traditional music and dance to modern art scenes, Greece offers a rich cultural
+                            experience that spans millennia.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    
-     
-    </main>
-    <footer class="athens" id="athens">
-        <button>
-            <h2>Welcome to <br> ATHENS </h2>
-            <a href="#welcome"></a>
-        </button>
-        <div class="welcome">
-        <h2>Athens - historic city and capital of Greece.  Many of Classical civilization’s and <br>  
-            artistic ideas originated here. The city is a world centre of archaeological research.  <br> 
-             You can find many historic and  interactive museums and theatres. Lot's of traditions <br> 
-              saves for hundrends years. There are many greek and international libraries where <br> 
-              you can find intresting books and bessellers for children and adult in different languages.</h2>
+    </section>
+
+    <!-- Athens Spotlight -->
+    <section class="athens-spotlight">
+        <div class="container">
+            <div class="athens-content">
+                <h2>Athens - Where Ancient Meets Modern</h2>
+                <p>As one of the world's oldest cities, Athens is a living museum of classical civilization. From the
+                    iconic Parthenon overlooking the city to the vibrant Plaka neighborhood with its cobblestone
+                    streets, Athens offers a unique blend of history and contemporary culture.</p>
+                <p>Explore world-class museums, enjoy traditional tavernas, and experience the famous Greek hospitality
+                    in this magnificent city that shaped Western civilization.</p>
+                <a href="#" class="btn">Discover Athens</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Showcase -->
+    <section id="destinations-section" class="image-showcase">
+        <div class="container">
+          
+            <h2 class="section-title">The Beauty of Greece</h2>
+            <div class="showcase-container">
+                <div class="showcase-item large">
+                    <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/refs/heads/main/photo-1570077188670-e3a8d69ac5ff.webp"
+                        alt="Santorini">
+                    <div class="showcase-caption">
+                        <h3>Santorini Sunset</h3>
+                        <p>Embrace the unparalleled beauty: A Santorini sunset is a magical moment when the sky ignites with shades of orange,
+                        pink, and gold, creating a breathtaking spectacle.</p>
+                        
+                        <p>Experience the special atmosphere of Oia: The best place to witness the sunset is the village of Oia, where the
+                        white-washed houses and blue-domed churches create a perfect contrast with the captivating colors of the sky.</p>
+                        
+                        <p>A moment of romance and serenity: This is the ideal time for couples to enjoy a romantic atmosphere that hovers over the
+                        island as the sun dips below the horizon.</p>
+                        
+                        <p>Capture unforgettable photos: Santorini at sunset is a dream for photographers, as every shot turns into a true
+                        masterpiece.</p>
+                        
+                        <p>Feel the unique magic: This moment isn't just the sun disappearing below the horizon; it's the culmination of the day,
+                        leaving an unforgettable memory for a lifetime.</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/refs/heads/main/pexels-photo-772689.jpeg"
+                        alt="Acropolis">
+                    <div class="showcase-caption">
+                        <h3>Acropolis of Athens</h3>
+                        <p>The Acropolis of Athens is a UNESCO World Heritage site and the most famous landmark in Greece, symbolizing the
+                        birthplace of democracy and philosophy. Located on a rocky hill, it served as a fortified religious center dedicated to
+                        the goddess Athena. The site is home to several masterpieces of classical Greek architecture, including the Parthenon, a
+                        monumental temple to Athena, and the Erechtheion, known for its famous Porch of the Caryatids. The Propylaea serves as
+                        the grand entrance. The best time to visit is early in the morning to avoid crowds and heat. A visit to the nearby
+                        Acropolis Museum is highly recommended to see the artifacts found on the site.</p>
+
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/refs/heads/main/caption.jpg"
+                        alt="Mykonos">
+                    <div class="showcase-caption">
+                        <h3>Mykonos Town</h3>
+                        <p>Mykonos Town, or Chora, is the vibrant capital of Mykonos. It's famous for its labyrinthine, narrow streets and
+                        distinctive Cycladic architecture—white-washed houses with colorful doors and balconies. The town is a mix of high-end
+                        boutiques and a lively nightlife scene. Key attractions include Little Venice, with its houses built directly on the
+                        sea; the Windmills, a historical landmark offering great views; and the picturesque Panagia Paraportiani Church. Mykonos
+                        Town is best explored on foot, and it beautifully balances a bustling atmosphere with hidden, tranquil corners.</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/refs/heads/main/image_processing20201117-4-1n8gmku.jpg"
+                        alt="Mediterranean Cuisine">
+                    <div class="showcase-caption">
+                        <h3>Mediterranean Cuisine</h3>
+                        <p>FMediterranean Cuisine
+                        Mediterranean cuisine is a culinary tradition from countries around the Mediterranean Sea, known for its simplicity and
+                        health benefits. It's based on three main staples: olives, wheat, and grapes, which provide oil, bread, and wine.
+                        The diet is rich in plant-based foods (vegetables, fruits, legumes), healthy fats (olive oil, nuts), and lean proteins
+                        (fish, seafood). Red meat is consumed rarely. Dishes are flavored with fresh herbs like oregano, basil, and rosemary.</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <img src="https://raw.githubusercontent.com/KarinaR-Ch/shecodes/refs/heads/main/licensed-image.jpg"
+                        alt="Zakynthos">
+                    <div class="showcase-caption">
+                        <h3>Navagio Beach</h3>
+                        <p>Navagio Beach, also known as Shipwreck Beach, is one of the most iconic and photogenic locations in Greece, situated on
+                        the island of Zakynthos. The beach is world-famous for its stunning white limestone cliffs, crystal-clear turquoise
+                        waters, and of course, the rusted shipwreck resting on the sand.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Get Travel Inspiration</h2>
+            <p>Subscribe to our newsletter for exclusive tips, hidden gems, and special offers for your Greek adventure.
+            </p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Discover Greece</h3>
+                    <p>Your guide to the best experiences in Greece, from ancient sites to hidden beaches and culinary
+                        delights.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Destinations</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://en.wikipedia.org/wiki/Athens">Athens</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Santorini">Santorini</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Mykonos">Mykonos</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Crete">Crete</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Rhodes">Rhodes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Travel Info</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Best Time to Visit</a></li>
+                        <li><a href="#">Transportation</a></li>
+                        <li><a href="#">Accommodation</a></li>
+                        <li><a href="#">Cultural Etiquette</a></li>
+                        <li><a href="#">Travel Guides</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Email: info@discovergreece.com</a></li>
+                        <li><a href="#">Phone: +30 210 123 4567</a></li>
+                        <li><a href="#">Address: Athens, Greece</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023 Discover Greece. All rights reserved.</p>
+            </div>
         </div>
     </footer>
-</body>
-</html>
 
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Successfully Subscribed!</h3>
+            <p>Thank you for subscribing to our newsletter. You'll receive travel inspiration and exclusive offers soon.
+            </p>
+            <button class="modal-btn" id="modalOk">OK</button>
+        </div>
+    </div>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Анімація обертання карток
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function () {
+                this.classList.toggle('flipped');
+            });
+        });
+
+        // Плавна прокрутка для навігаційних посилань
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+
+                // Особливий обробник для посилання на Home
+                if (targetId === '#home') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                    return;
+                }
+
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset - 80;
+
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Анімація елементів при прокручуванні
+        function animateOnScroll() {
+            const featureCards = document.querySelectorAll('.feature-card');
+            const athensContent = document.querySelector('.athens-content');
+            const showcaseItems = document.querySelectorAll('.showcase-item');
+
+            featureCards.forEach(card => {
+                const cardPosition = card.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+
+                if (cardPosition < screenPosition) {
+                    card.classList.add('animated');
+                }
+            });
+
+            if (athensContent) {
+                const athensPosition = athensContent.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+
+                if (athensPosition < screenPosition) {
+                    athensContent.classList.add('animated');
+                }
+            }
+
+            showcaseItems.forEach(item => {
+                const itemPosition = item.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+
+                if (itemPosition < screenPosition) {
+                    item.classList.add('animated');
+                }
+            });
+        }
+
+        // Фіксація навігаційної панелі при прокручуванні
+        function handleNavbar() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }
+
+        // Scroll to top button
+        function handleScrollTop() {
+            const scrollTopBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        }
+
+        // Scroll to top functionality
+        document.getElementById('scrollTop').addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Newsletter form handling
+        document.querySelector('.newsletter-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const emailInput = this.querySelector('input[type="email"]');
+            const email = emailInput.value.trim();
+
+            if (email) {
+                // Here you would typically send the data to your server
+                // For this example, we'll just show the success message
+
+                // Show success modal
+                document.getElementById('successModal').classList.add('show');
+
+                // Clear the input
+                emailInput.value = '';
+            }
+        });
+
+        // Close modal functionality
+        document.getElementById('modalClose').addEventListener('click', function () {
+            document.getElementById('successModal').classList.remove('show');
+        });
+
+        document.getElementById('modalOk').addEventListener('click', function () {
+            document.getElementById('successModal').classList.remove('show');
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('successModal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                this.classList.remove('show');
+            }
+        });
+
+        // Скидання анімації при перезавантаженні
+        window.addEventListener('beforeunload', function () {
+            document.querySelectorAll('.card-container').forEach(container => {
+                container.style.animation = 'none';
+            });
+        });
+
+        // Додавання обробників подій
+        window.addEventListener('scroll', () => {
+            animateOnScroll();
+            handleNavbar();
+            handleScrollTop();
+        });
+
+        // Запуск анімації при завантаженні сторінки
+        window.addEventListener('load', () => {
+            animateOnScroll();
+            handleNavbar();
+            handleScrollTop();
+        });
+    </script>
+</body>
+
+</html>
